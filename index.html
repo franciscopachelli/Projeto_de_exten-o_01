@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto - Defesa Cibernética</title>
+ 
+<style>
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body{
+    background:#0f172a;
+    color:white;
+}
+ 
+/* HEADER */
+ 
+header{
+    background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
+    padding:40px 20px;
+    text-align:center;
+}
+ 
+header h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+ 
+header p{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+}
+ 
+/* MENU */
+ 
+nav{
+    background:#020617;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+ 
+nav button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+nav button:hover{
+    background:#38bdf8;
+    transform:scale(1.05);
+}
+ 
+/* ABAS */
+ 
+.tab{
+    display:none;
+    padding:50px 10%;
+}
+ 
+.active{
+    display:block;
+}
+ 
+/* CARDS */
+ 
+.card{
+    background:#1e293b;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+ 
+.card h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+ 
+.card h3{
+    color:#facc15;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+ 
+.card p{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+ 
+ul{
+    margin-left:20px;
+}
+ 
+li{
+    margin-bottom:10px;
+}
+ 
+/* FOOTER */
+ 
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+ 
+.highlight{
+    color:#facc15;
+    font-weight:bold;
+}
+ 
+</style>
+ 
+</head>
+<body>
+ 
+<header>
+ 
+    <h1>Defesa Cibernética</h1>
+ 
+    <p>
+        Projeto desenvolvido com foco em Segurança Digital e conscientização
+        sobre os riscos presentes no uso das redes sociais por jovens e adultos.
+    </p>
+ 
+</header>
+ 
+<nav>
+ 
+    <button onclick="mostrarAba('diagnostico')">
+        Diagnóstico dos Resultados
+    </button>
+ 
+    <button onclick="mostrarAba('solucao')">
+        Solução Proposta
+    </button>
+ 
+</nav>
+ 
+<!-- ABA 1 -->
+ 
+<section id="diagnostico" class="tab active">
+ 
+    <div class="card">
+ 
+        <h2>Resultado do Diagnóstico</h2>
+ 
+        <p>
+            O questionário foi aplicado para analisar os hábitos digitais
+            dos participantes e identificar possíveis vulnerabilidades
+            relacionadas à segurança cibernética.
+        </p>
+ 
+        <p>
+            A pesquisa revelou que muitos usuários possuem comportamentos
+            considerados perigosos no ambiente digital, principalmente
+            relacionados ao uso de senhas, downloads inseguros,
+            compartilhamento de informações pessoais e falta de proteção
+            adicional nas contas.
+        </p>
+ 
+        <p>
+            Foram analisadas respostas de participantes entre 18 e 40 anos,
+            sendo a maioria usuários frequentes de redes sociais como
+            Instagram, WhatsApp e outras plataformas digitais.
+        </p>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Uso da Mesma Senha em Diversas Contas</h2>
+ 
+        <p>
+            Um dos maiores problemas encontrados foi o uso da mesma senha
+            em várias plataformas diferentes. Muitas pessoas utilizam
+            pequenas variações da mesma senha ou simplesmente repetem
+            exatamente a mesma combinação em redes sociais, e-mails
+            e aplicativos.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Caso uma dessas plataformas sofra vazamento de dados,
+            criminosos podem utilizar a mesma senha para tentar acessar
+            outras contas da vítima. Esse tipo de ataque é conhecido como
+            "Credential Stuffing".
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Utilize senhas diferentes para cada conta;</li>
+            <li>Crie senhas longas com letras, números e símbolos;</li>
+            <li>Utilize gerenciadores de senha;</li>
+            <li>Evite informações óbvias como datas de nascimento.</li>
+        </ul>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Falta de Verificação em Duas Etapas (2FA)</h2>
+ 
+        <p>
+            Muitos usuários não utilizam autenticação em duas etapas,
+            deixando suas contas protegidas apenas por senha.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Mesmo que a senha seja descoberta, a verificação em duas etapas
+            adiciona uma camada extra de segurança. Sem essa proteção,
+            criminosos conseguem acessar contas com muito mais facilidade.
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Ative o 2FA em todas as contas importantes;</li>
+            <li>Prefira aplicativos autenticadores;</li>
+            <li>Proteja principalmente e-mails e redes sociais;</li>
+            <li>Guarde os códigos de recuperação.</li>
+        </ul>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Downloads Fora das Lojas Oficiais</h2>
+ 
+        <p>
+            Alguns participantes afirmaram já ter realizado downloads
+            de aplicativos fora da Play Store, App Store ou sites oficiais.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Aplicativos piratas ou modificados podem conter vírus,
+            spyware ou malware capazes de roubar senhas,
+            dados bancários e informações pessoais.
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Baixe aplicativos apenas de lojas oficiais;</li>
+            <li>Evite APKs desconhecidos;</li>
+            <li>Pesquise avaliações antes de instalar apps;</li>
+            <li>Mantenha antivírus e sistema atualizados.</li>
+        </ul>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Cliques em Links Suspeitos</h2>
+ 
+        <p>
+            Muitos usuários demonstraram confiar em links recebidos
+            por WhatsApp, SMS ou promoções aparentemente vantajosas.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Golpes de phishing utilizam links falsos para roubar
+            informações pessoais, senhas e dados bancários.
+            Frequentemente os criminosos simulam empresas conhecidas
+            para enganar as vítimas.
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Sempre verifique o endereço do site;</li>
+            <li>Desconfie de promoções exageradas;</li>
+            <li>Não clique em links enviados por desconhecidos;</li>
+            <li>Prefira acessar sites digitando o endereço manualmente.</li>
+        </ul>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Uso de Wi-Fi Público</h2>
+ 
+        <p>
+            Parte dos participantes afirmou utilizar redes Wi-Fi públicas
+            para acessar contas pessoais e aplicativos importantes.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Redes públicas podem ser monitoradas por criminosos.
+            Em alguns casos, hackers criam redes falsas para capturar
+            dados digitados pelos usuários.
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Evite acessar bancos em Wi-Fi público;</li>
+            <li>Utilize dados móveis sempre que possível;</li>
+            <li>Use VPN em conexões públicas;</li>
+            <li>Desative conexão automática em redes abertas.</li>
+        </ul>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Falta de Backup</h2>
+ 
+        <p>
+            Alguns participantes afirmaram não possuir backup atualizado
+            dos arquivos pessoais.
+        </p>
+ 
+        <h3>Por que isso é perigoso?</h3>
+ 
+        <p>
+            Caso o dispositivo seja invadido, perdido ou sofra ataque
+            de ransomware, todos os arquivos podem ser apagados
+            permanentemente.
+        </p>
+ 
+        <h3>Dicas de Segurança</h3>
+ 
+        <ul>
+            <li>Utilize backup automático na nuvem;</li>
+            <li>Mantenha cópias em HD externo;</li>
+            <li>Faça backups regularmente;</li>
+            <li>Proteja arquivos importantes com senha.</li>
+        </ul>
+ 
+    </div>
+ 
+</section>
+ 
+<!-- ABA 2 -->
+ 
+<section id="solucao" class="tab">
+ 
+    <div class="card">
+ 
+        <h2>Solução Proposta</h2>
+ 
+        <p>
+            Após a análise dos resultados obtidos no questionário,
+            foi desenvolvido um portal educativo com foco em
+            conscientização digital e segurança cibernética.
+        </p>
+ 
+        <p>
+            O objetivo principal do projeto é informar os usuários
+            sobre práticas inseguras no ambiente online e apresentar
+            maneiras corretas de proteger suas contas, dispositivos
+            e informações pessoais.
+        </p>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Formato Escolhido</h2>
+ 
+        <p>
+            O grupo escolheu desenvolver um site utilizando HTML e CSS,
+            criando uma plataforma visual, organizada e acessível
+            para apresentar os conteúdos educativos.
+        </p>
+ 
+        <p>
+            O formato web foi escolhido porque permite fácil acesso
+            em computadores e celulares, além de possibilitar futuras
+            melhorias como gráficos, formulários, animações e quizzes
+            educativos.
+        </p>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Importância do Tema</h2>
+ 
+        <p>
+            Atualmente, jovens passam grande parte do tempo conectados
+            à internet e utilizando redes sociais diariamente.
+            Apesar disso, muitos usuários ainda desconhecem os riscos
+            relacionados à segurança digital.
+        </p>
+ 
+        <p>
+            Golpes virtuais, vazamento de dados, roubo de contas,
+            phishing e malware se tornaram extremamente comuns,
+            principalmente entre usuários que não possuem conhecimento
+            básico sobre proteção digital.
+        </p>
+ 
+        <p>
+            Dessa forma, o projeto busca conscientizar os usuários
+            sobre práticas mais seguras no ambiente online,
+            ajudando a reduzir riscos e aumentar a proteção
+            das informações pessoais.
+        </p>
+ 
+    </div>
+ 
+    <div class="card">
+ 
+        <h2>Conclusão da Pesquisa</h2>
+ 
+        <p>
+            A pesquisa demonstrou que mesmo usuários jovens,
+            acostumados com tecnologia e redes sociais,
+            ainda apresentam comportamentos vulneráveis
+            em relação à segurança digital.
+        </p>
+ 
+        <p>
+            Isso mostra a necessidade de ampliar o acesso
+            à educação digital e incentivar práticas de
+            segurança cibernética desde cedo.
+        </p>
+ 
+        <p>
+            O projeto foi desenvolvido justamente para contribuir
+            com essa conscientização de maneira simples,
+            acessível e educativa.
+        </p>
+ 
+    </div>
+ 
+</section>
+ 
+<footer>
+ 
+    <p>
+        Projeto de Defesa Cibernética | Segurança Digital nas Redes Sociais
+    </p>
+ 
+</footer>
+ 
+<script>
+ 
+function mostrarAba(id){
+ 
+    let abas = document.querySelectorAll('.tab');
+ 
+    abas.forEach(function(aba){
+        aba.classList.remove('active');
+    });
+ 
+    document.getElementById(id).classList.add('active')
+ 
